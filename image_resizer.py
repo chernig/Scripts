@@ -10,4 +10,4 @@ for image_type in types:
 for x in files_lst:
     current_image = img.open(x)
     new_image = current_image.resize((size_w, size_h))
-    new_image.save(x, 'JPEG')
+    new_image.save(x)
