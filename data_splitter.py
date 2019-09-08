@@ -6,11 +6,13 @@ import random
 print('Would you like to have a validation folder? y/n')
 answer = input()
 folders = []
+#List of available extensions
 types = ['*.jpg', '*.jpeg', '*.png']
 counter = 0
 files_lst = []
 path = os.getcwd()
 folders.extend(['training', 'test'])
+#Validation set check (if so - split into 3 folders: training, test, validation)
 if answer =='y':
     folders.append('validation')
     print('Please enter the desired propotion betweet training / test / validation sets (for example 0.8 0.1 0.1):')

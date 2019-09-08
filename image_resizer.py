@@ -2,6 +2,7 @@ from PIL import Image as img
 import os
 import glob
 size_w, size_h = map(int, input('Please enter the desired size, for example 800 600 (width height): ').split(' '))
+#List of available extensions
 types = ['*.jpg', '*.jpeg', '*.png']
 files_lst = []
 for image_type in types:
